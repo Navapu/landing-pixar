@@ -8,8 +8,8 @@ const Header = () => {
             </div>
             <nav className='header-nav'>
                 <ul className='header-nav-ul'>
-                    {menuItems.map((items) => (
-                        <li>{items}</li>
+                    {menuItems.map((items, idx) => (
+                        <li key={idx}>{items}</li>
                     ))}
                 </ul>
             </nav>
